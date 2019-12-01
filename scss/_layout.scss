@@ -6,12 +6,14 @@ nav {
     }
 
     .profile-nav {
-        display: block;
-        width: 100%;
-        margin: 10px 0;
+        margin: 5px 0;
 
-        a{
+        a {
             padding: 5px;
+        }
+
+        li:last-child {
+            margin-bottom: 10px;
         }
     }
 }
