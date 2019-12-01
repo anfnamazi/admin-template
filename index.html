@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>admin template</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper white">
+      <div class="container-fluid">
+        <a href="#" data-activates="mobile-menu" class="button-collapse show-on-medium-and-up"><i
+            class="material-icons">menu</i></a>
+        <ul class="right">
+          <li><a href="#"><i class="material-icons">apps</i></a></li>
+          <li><a href="#"><i class="material-icons">mail_outline</i></a></li>
+          <li><a href="#"><i class="material-icons notify">notifications_none <span
+                  class="btn-floating pulse-big"></span></i></a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">
+              <img class="contact" src="images/face1.jpg" alt="" />
+            </a></li>
+          <ul id='dropdown1' class='dropdown-content animated fadeInUp'>
+            <div class="card">
+              <div class="card-header">
+                <img src="images/face1.jpg">
+                <h5>my name is lorem ipsum</h5>
+                <small class="grey-text">example@Email.com</small>
+              </div>
+              <ul class="profile-nav">
+                <li><a href="#"><i class="material-icons">person_outline</i>profile</a></li>
+                <li><a href="#"><i class="material-icons">edit</i>edit profile</a></li>
+                <li><a href="#"><i class="material-icons">swap_horiz</i>switch user</a></li>
+                <li><a href="#"><i class="material-icons">exit_to_app</i>log out</a></li>
+              </ul>
+            </div>
+          </ul>
+        </ul>
+        <ul id="mobile-menu" class="side-nav">
+          <li>
+            <div class="userView">
+              <div class="background">
+                <img src="http://lorempixel.com/output/abstract-q-c-640-480-10.jpg" alt="">
+              </div>
+              <a href="#!user"><img class="circle" src="http://lorempixel.com/output/people-q-c-640-480-9.jpg"
+                  alt=""></a>
+              <a href="#!name"><span class="white-text name">John Doe</span></a>
+              <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div>
+          </li>
+          <li><a href="#!">item1</a></li>
+          <li><a href="#!">item2</a></li>
+          <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+              <li>
+                <a class="collapsible-header">Dropdown<i class="material-icons right">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                  <ul>
+                    <li><a href="#!">sub-dropdown1</a></li>
+                    <li><a href="#!">sub-dropdown2</a></li>
+                    <li><a href="#!">sub-dropdown3</a></li>
+                    <li><a href="#!">sub-dropdown4</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#!">item3</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

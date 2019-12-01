@@ -1,0 +1,17 @@
+nav {
+    box-shadow: none;
+
+    a {
+        color: #444 !important;
+    }
+
+    .profile-nav {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+
+        a{
+            padding: 5px;
+        }
+    }
+}

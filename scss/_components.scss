@@ -1,0 +1,68 @@
+.container-fluid {
+    display: block !important;
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
+.contact {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 33px;
+    position: relative;
+    top: 10px;
+}
+
+.card {
+    position: relative;
+    box-shadow: none;
+    margin: 0;
+    padding: 20px;
+
+    .card-header {
+        height: 180px;
+        padding-top: 100px;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+
+        h5 {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        img {
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            left: 80px;
+            height: 70px;
+        }
+    }
+}
+
+.notify {
+    position: relative;
+
+    span {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        top: 22px;
+        left: 13px;
+        background-color: $color-primary;
+    }
+}
+
+.pulse-big {
+    animation: pulse-big 1s infinite;
+}
+
+@keyframes pulse-big {
+    0% {
+        box-shadow: 0 0 0 0px $color-primary;
+    }
+
+    100% {
+        box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+    }
+}

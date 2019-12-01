@@ -1,0 +1,36 @@
+$color-primary:#727cf5;
+
+.dropdown-content {
+    width: 230px !important;
+    line-height: 20px;
+    color: #444;
+    top: 60px !important;
+
+    li {
+        min-height: unset;
+
+        a {
+            padding: 0;
+        }
+    }
+}
+
+body {
+    background-color: #f4f4f4
+}
+
+ul {
+    li {
+        background-color: unset !important;
+
+        a:hover {
+            color: $color-primary !important;
+            background-color: unset !important;
+        }
+    }
+}
+
+#dropdown1{
+    right: 1vw;
+    left: auto !important;
+}
