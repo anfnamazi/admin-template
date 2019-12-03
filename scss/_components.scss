@@ -97,10 +97,16 @@
 
     &-body {
         display: block;
-        padding: 0 20px;
+        padding: 0 4px;
 
         a {
-            padding: 10px 0;
+            padding: 10px 20px;
+
+            @for $i from 1 through 5 {
+                &:nth-child(#{$i}):hover {
+                    background-color: lighten($color: map-get($map: $bg-colors, $key: $i), $amount: 20%) !important;
+                }
+            }
 
             .media {
                 @for $i from 1 through 5 {
