@@ -100,7 +100,7 @@
         padding: 0 20px;
 
         a {
-            padding: 15px 0;
+            padding: 10px 0;
 
             .media {
                 @for $i from 1 through 5 {
@@ -116,7 +116,7 @@
 
     &-bottom {
         width: 100%;
-        padding: 10px 18px !important;
+        padding: 12px 18px !important;
         border-top: 1px solid #eee;
         text-align: center;
         font-weight: 500;
