@@ -5,6 +5,12 @@ nav {
         color: #444 !important;
     }
 
+    #dropdown1 {
+        width: 230px !important;
+        right: 1vw;
+        left: auto !important;
+    }
+
     .profile-nav {
         margin: 5px 0;
 
@@ -14,6 +20,16 @@ nav {
 
         li:last-child {
             margin-bottom: 10px;
+        }
+    }
+
+    #dropdown2 {
+        width: 280px !important;
+        left: auto !important;
+        right: 60px;
+
+        @media (max-width:767px) {
+            right: 20px !important;
         }
     }
 }

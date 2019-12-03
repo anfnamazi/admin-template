@@ -19,7 +19,7 @@
     padding: 20px;
 
     &-header {
-        height: 180px;
+        height: 170px;
         padding-top: 90px;
         text-align: center;
         border-bottom: 1px solid #ccc;
@@ -67,6 +67,57 @@
     }
 }
 
-.text-muted{
+.text-muted {
     color: #828282 !important;
+}
+
+.card {
+    box-shadow: unset;
+    margin: unset;
+
+    &-header {
+        width: 100%;
+        display: flex;
+        padding: 10px 18px;
+        border-bottom: 1px solid #eee;
+
+        h5 {
+            font-size: 14px;
+            margin: unset;
+            margin-right: auto;
+            line-height: unset;
+            font-weight: 700;
+        }
+
+        a {
+            font-size: 14px;
+        }
+    }
+
+    &-body {
+        display: block;
+        padding: 0 20px;
+
+        a {
+            padding: 10px 0;
+
+            .media {
+                @for $i from 1 through 5 {
+                    .logo-#{$i} {
+                        color: map-get($map: $colors, $key: $i);
+                        background-color: map-get($map: $bg-colors, $key: $i);
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        width: 100%;
+        padding: 10px 18px !important;
+        border-top: 1px solid #eee;
+        text-align: center;
+        font-weight: 500;
+    }
 }
