@@ -116,7 +116,7 @@
                 .logo-#{$i} {
                     color: map-get($map: $colors, $key: $i);
                     background-color: map-get($map: $bg-colors, $key: $i);
-                    padding: 5px;
+                    padding: 6px;
                     margin-right: 15px;
                 }
             }
