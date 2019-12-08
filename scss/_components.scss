@@ -99,7 +99,9 @@
         display: block;
         padding: 0 4px;
 
-        a {
+        a.media {
+            display: flex;
+            align-items: center;
             padding: 10px 20px;
 
             @for $i from 1 through 5 {
@@ -108,13 +110,14 @@
                 }
             }
 
-            .media {
-                @for $i from 1 through 5 {
-                    .logo-#{$i} {
-                        color: map-get($map: $colors, $key: $i);
-                        background-color: map-get($map: $bg-colors, $key: $i);
-                        padding: 5px;
-                    }
+            display: flex !important;
+
+            @for $i from 1 through 5 {
+                .logo-#{$i} {
+                    color: map-get($map: $colors, $key: $i);
+                    background-color: map-get($map: $bg-colors, $key: $i);
+                    padding: 5px;
+                    margin-right: 15px;
                 }
             }
         }
