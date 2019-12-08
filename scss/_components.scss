@@ -8,8 +8,9 @@
     border-radius: 50%;
     object-fit: cover;
     height: 33px;
+    width: 33px;
     position: relative;
-    top: 10px;
+    box-sizing: initial;
 }
 
 .pro-card {
@@ -116,7 +117,7 @@
                 .logo-#{$i} {
                     color: map-get($map: $colors, $key: $i);
                     background-color: map-get($map: $bg-colors, $key: $i);
-                    padding: 6px;
+                    padding: 5px;
                     margin-right: 15px;
                 }
             }

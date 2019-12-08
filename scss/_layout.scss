@@ -1,6 +1,10 @@
 nav {
     box-shadow: none;
 
+    .dropdown-button>.pro-img {
+        top: 10px;
+    }
+
     a {
         color: #444 !important;
     }
@@ -27,6 +31,16 @@ nav {
         width: 280px !important;
         left: auto !important;
         right: 60px;
+
+        @media (max-width:767px) {
+            right: 20px !important;
+        }
+    }
+
+    #dropdown3 {
+        width: 280px !important;
+        left: auto !important;
+        right: 110px;
 
         @media (max-width:767px) {
             right: 20px !important;
