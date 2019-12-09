@@ -58,21 +58,11 @@
     animation: pulse-big 1s infinite;
 }
 
-@keyframes pulse-big {
-    0% {
-        box-shadow: 0 0 0 0px $color-primary;
-    }
-
-    100% {
-        box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
-    }
-}
-
 .text-muted {
     color: #828282 !important;
 }
 
-.card {
+.drp-card {
     box-shadow: unset;
     margin: unset;
 

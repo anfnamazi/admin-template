@@ -43,6 +43,16 @@ ul {
     }
 }
 
+@keyframes pulse-big {
+    0% {
+        box-shadow: 0 0 0 0px $color-primary;
+    }
+
+    100% {
+        box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+    }
+}
+
 @mixin tools-bar {
     width: 282px !important;
     left: auto !important;
