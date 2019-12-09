@@ -28,22 +28,17 @@ nav {
     }
 
     #dropdown2 {
-        width: 280px !important;
-        left: auto !important;
         right: 60px;
-
-        @media (max-width:767px) {
-            right: 20px !important;
-        }
+        @include tools-bar;
     }
 
     #dropdown3 {
-        width: 280px !important;
-        left: auto !important;
+        @include tools-bar;
         right: 110px;
+    }
 
-        @media (max-width:767px) {
-            right: 20px !important;
-        }
+    #dropdown4 {
+        @include tools-bar;
+        right: 160px;
     }
 }

@@ -132,3 +132,26 @@
         font-weight: 500;
     }
 }
+
+.web-apps {
+    display: flex;
+    margin-bottom: 5px;
+
+    .web-app {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        float: center;
+        flex: 1;
+        padding: 0;
+        padding-bottom: 10px;
+
+        &:hover {
+            background-color: lighten($color: map-get($map: $bg-colors, $key: 1), $amount: 10%) !important;
+        }
+
+        i {
+            height: 45px !important;
+        }
+    }
+}
