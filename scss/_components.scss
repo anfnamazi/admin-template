@@ -145,3 +145,22 @@
         }
     }
 }
+
+.search {
+    padding-left: 15px;
+    display: inline-flex;
+    width: 40% !important;
+    margin-right: 0 !important;
+
+    &-icon {
+        display: inline !important;
+        padding-right: 15px;
+    }
+
+    &-input {
+        padding-top: 18px !important;
+        border-bottom: none !important;
+        height: 2rem !important;
+    }
+}
+
