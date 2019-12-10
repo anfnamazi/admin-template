@@ -97,7 +97,7 @@
 
             @for $i from 1 through 5 {
                 &:nth-child(#{$i}):hover {
-                    background-color: lighten($color: map-get($map: $bg-colors, $key: $i), $amount: 20%) !important;
+                    background-color: lighten($color: map-get($map: $bg-colors, $key: $i), $amount: 15%) !important;
                 }
             }
 
