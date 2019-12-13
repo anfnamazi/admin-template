@@ -137,7 +137,7 @@
         padding-bottom: 10px;
 
         &:hover {
-            background-color: lighten($color: map-get($map: $bg-colors, $key: 1), $amount: 10%) !important;
+            background-color: lighten($color: map-get($map: $bg-colors, $key: 1), $amount: 15%) !important;
         }
 
         i {
@@ -164,3 +164,17 @@
     }
 }
 
+.admin-logo {
+    height: 40px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+
+    &:hover {
+        background-color: unset;
+    }
+}
+
+.move-up-icon{
+    transform: rotate(180deg);
+}

@@ -44,6 +44,12 @@ ul {
     }
 }
 
+i {
+    color: unset !important;
+    transition: transform .3s;
+    user-select: none;
+}
+
 @keyframes fade-up {
     0% {
         transform: translateY(100px);
