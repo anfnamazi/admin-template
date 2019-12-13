@@ -17,6 +17,7 @@ $bg-colors:(1: rgba(114, 124, 245, 0.15),
     top: 60px !important;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.068);
     max-height: unset;
+    animation: fade-up .5s;
 
     li {
         min-height: unset;
@@ -29,7 +30,7 @@ $bg-colors:(1: rgba(114, 124, 245, 0.15),
 
 body {
     background-color: #f4f4f4;
-    font-family: Overpass,sans-serif;
+    font-family: Overpass, sans-serif;
 }
 
 ul {
@@ -40,6 +41,18 @@ ul {
             color: $color-primary !important;
             background-color: unset !important;
         }
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
 
