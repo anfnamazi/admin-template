@@ -59,7 +59,7 @@
 }
 
 .text-muted {
-    color: #828282 !important;
+    color: $color-gray !important;
 }
 
 .drp-card {
@@ -167,14 +167,33 @@
 .admin-logo {
     height: 40px;
     position: relative;
-    top: 15px;
-    left: 15px;
+    top: 20px;
+    left: 30px;
+}
+
+.move-up-icon {
+    transform: rotate(180deg);
+}
+
+.side-nav>li>a,
+.collapsible-header {
+    transition: letter-spacing .3s;
 
     &:hover {
-        background-color: unset;
+        letter-spacing: 2px;
+    }
+
+    .sidenav-active {
+        border-left: 4px solid $color-primary;
     }
 }
 
-.move-up-icon{
-    transform: rotate(180deg);
+.collapsible-body {
+    a {
+        transition: transform .3s;
+
+        &:hover {
+            transform: translateX(10px);
+        }
+    }
 }

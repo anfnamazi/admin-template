@@ -42,4 +42,11 @@ nav {
         @include tools-bar;
         right: 160px;
     }
+
+    .side-nav {
+        h6 {
+            color: $color-gray !important;
+            padding: 15px 20px 5px;
+        }
+    }
 }
