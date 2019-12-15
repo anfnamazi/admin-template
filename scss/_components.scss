@@ -168,7 +168,7 @@
     height: 40px;
     position: relative;
     top: 20px;
-    left: 30px;
+    left: 20px;
 }
 
 .move-up-icon {
@@ -182,18 +182,19 @@
     &:hover {
         letter-spacing: 2px;
     }
+}
 
-    .sidenav-active {
-        border-left: 4px solid $color-primary;
-    }
+.sidenav-active {
+    border-left: 4px solid $color-primary;
 }
 
 .collapsible-body {
     a {
         transition: transform .3s;
+        height: 36px !important;
 
         &:hover {
-            transform: translateX(10px);
+            transform: translateX(7px);
         }
     }
 }
