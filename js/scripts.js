@@ -1,14 +1,16 @@
 $(".button-collapse").sideNav();
 
-let dropDown = $(".collapsible")
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    
+let collapsible = $('.collapsible')
+let collapsibleHeader = $(".collapsible-header")
+let collapsibleIcon = $(".collapsible-icon")
+
+for (let i = 0; i < collapsible.length; i++) {
+    $(collapsible[i]).click(function () {
+        if ($(collapsibleHeader[i]).hasClass("active")) {
+            $(collapsibleIcon[i]).addClass("move-up-icon")
+        } else {
+            $(collapsibleIcon[i]).removeClass("move-up-icon")
+        }
+    })
 }
-dropDown[i].click(function () {
-    if ($(".collapsible-header").hasClass("active")) {
-        $(".collapsible-icon").addClass("move-up-icon");
-    } else {
-        $(".collapsible-icon").removeClass("move-up-icon");
-    }
-});
+
